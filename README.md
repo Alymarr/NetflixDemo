@@ -1,2 +1,2 @@
 # NetflixDemo
-A Netflix copy to show css skills
+A Netflix copy to practice css skills with some modifications.
