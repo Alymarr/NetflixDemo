@@ -1,10 +1,12 @@
 import SignIn from "./SignIn"
-
+import classes from './Home.module.css'
+import { useState } from "react"
 function Home() {
+    const [signedIn, setSignedIn] = useState(false)
     return (
         <>
-            <h1>Browse All Titles</h1>
-            <SignIn />
+            {signedIn && <h1>Browse All Titles</h1>}
+            {!signedIn && <SignIn />}
         </>
     )
 }

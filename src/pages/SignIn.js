@@ -1,10 +1,11 @@
-import Users from "../Components/Users";
+import Profile from "../Components/Users";
+import classes from './SignIn.module.css'
 function SignIn() {
   return (
-    <>
-      <h1>Who's Watching?</h1>
-      <Users />
-    </>
+    <div className={classes.signIn}>
+      <h1 className={classes.title}>Who's Watching?</h1>
+      <Profile />
+    </div>
   );
 }
 
