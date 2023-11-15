@@ -1,10 +1,12 @@
 import Profile from "../Components/Users";
-import classes from './SignIn.module.css'
-function SignIn() {
+function SignIn(props) {
+  const onLoginHandler = () => {
+    props.setSignedIn(true)
+  }
   return (
-    <div className={classes.signIn}>
-      <h1 className={classes.title}>Who's Watching?</h1>
-      <Profile />
+    <div className='bg-[#121212] h-[100vh] text-white text-center flex-col '>
+      <h1 >Who's Watching?</h1>
+      <Profile onLoginHandler={onLoginHandler} />
     </div>
   );
 }
